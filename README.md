@@ -17,6 +17,8 @@ header {
   background: pink;
   color: white;
   padding: 15px;
+  margin-top: 30px;
+  border-radius: 10px;
   text-align: center;
 }
 header img {
