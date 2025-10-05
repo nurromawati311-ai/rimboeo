@@ -1,129 +1,143 @@
-<!DOCTYPE html>
 <html lang="id">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Toko RIMBERIO.SLAY</title>
+  <title>TOKO RIMBERIO.SLAY</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #f9f9f9;
-      color: #333;
-    }
-    header {
-      background: #2d89ef;
+   body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #A2D2FF;
+  color: #333;
+}
+
+	header {
+      background: pink;
       color: white;
       padding: 20px;
-      text-align: left;
-    }
-    nav {
-      background: #1b5dbf;
-      display: flex;
-      justify-content: left;
-      padding: 10px;
-    }
+      text-align: center;
+	  }
+	  nav {
+      background: #FC6CB5;
+	  display: flex;
+	  justify-content: center;
+	  padding: 10px;
+	  }
     nav a {
-      color: white;
-      text-decoration: none;
-      margin: 0 15px;
-      font-weight: bold;
-    }
+	color: #F2D2BD;
+	text-decoration: none;
+	margin: 0 15px;
+	font-weight: bold;
+	}
     .container {
-      max-width: 1000px;
-      margin: 20px auto;
-      padding: 0 15px;
-    }
+	max-width: 1000px;
+	margin: 20px auto;
+	padding: 0 15px;
+	}
     .products {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-      padding: 10px;
-    }
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	gap: 20px;
+	padding: 10px;
+	}
     .product {
-      border: 1px solid #ccc;
-      background: #fff;
-      padding: 15px;
-      border-radius: 10px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-      text-align: center;
-    }
+	border: 1px solid #ccc;
+	background: #F2D2BD;
+	padding: 15px;
+	border-radius: 10px;
+	box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+	text-align: center;
+	}
     .product img {
-      width: 100%;
-      height: auto;
-      object-fit: contain;
-      border-radius: 5px;
-    }
+	width: 100%;
+	height: auto;
+	object-fit: contain;
+	border-radius: 5px;}
     .product h3 {
-      margin: 10px 0 5px;
-    }
+	margin: 10px 0 5px;
+	}
     .price {
-      color: #e91e63;
-      font-weight: bold;
-    }
+	color: #FC6CB5;
+	font-weight: bold;
+	}
     .btn {
-      display: inline-block;
-      margin-top: 10px;
-      padding: 10px 15px;
-      background: #2d89ef;
-      color: white;
-      border-radius: 5px;
-      text-decoration: none;
-      cursor: pointer;
-    }
-    .btn:hover {
-      background: #1b5dbf;
-    }
+	display: inline-block;
+	margin-top: 10px;
+	padding: 10px 15px;
+	background: #F98088;
+	color: white;
+	border-radius: 5px;
+	text-decoration: none;
+	cursor: pointer;
+	}
+    .btn:hover {background: violet;}  
     .cart {
-      background: #fff;
-      padding: 15px;
-      margin-top: 30px;
-      border-radius: 10px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    }
-    .cart h3 {
-      margin-top: 0;
-    }
-    .cart ul {
-      padding-left: 20px;
-    }
-    .cart li {
-      margin-bottom: 8px;
-    }
+	background: #F98088;
+	padding: 15px;
+	margin-top: 30px;
+	border-radius: 10px;
+	box-shadow: 0 2px 5px rgba(0,0,0,0.1);}
+    .cart h3 {margin-top: 0;}
+    .cart ul {padding-left: 20px;}
+    .cart li {margin-bottom: 8px;}
     .removeBtn {
-      margin-left: 10px;
-      color: red;
-      cursor: pointer;
-      font-weight: bold;
-    }
+	margin-left: 10px;
+	color: red;
+	cursor: pointer;
+	font-weight: bold;
+	}
     .checkout {
-      display: inline-block;
-      margin: 5px 10px 5px 0;
-      padding: 10px 15px;
-      background: #25D366; /* warna WhatsApp */
-      color: white;
-      border-radius: 5px;
-      text-decoration: none;
-      font-weight: bold;
-      transition: background 0.2s;
-    }
-    .checkout:hover {
-      background: #1ebe5b;
-    }
+	display: inline-block;
+	margin: 5px 10px 5px 0;
+	padding: 10px 15px;
+	background: #F8ABA0;
+	color: white;
+	border-radius: 5px;
+	text-decoration: none;
+	font-weight: bold;
+	transition: background 0.2s;
+	}
+    .checkout:hover {background: purple;}  /* FIX warna */
     footer {
-      background: #2d89ef;
-      color: white;
-      text-align: center;
-      padding: 15px;
-      margin-top: 20px;
-    }
+	background: pink;
+	color: white;
+	text-align: center;
+	padding: 25px;
+	margin-top: 20px;
+	}
+    .total {
+	font-weight: bold;
+	margin-top: 10px;
+	font-size: 18px;
+	color: #a83279;
+	}
+    /* Popup notifikasi */
+    .popup {
+	position: fixed;
+	top: 20px;
+	right: 20px;
+	background: #C5ADED;
+	color: black;
+	padding: 12px 20px;
+	border-radius: 8px;
+	box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+	opacity: 0;
+	transform: translateY(-20px);
+	transition: all 0.3s ease;
+	z-index: 9999;}
+    .popup.show {opacity: 1;transform: translateY(0);}
   </style>
 </head>
 <body>
-  <header>
-    <h1>Toko RIMBERIO.SLAY</h1>
-    <p>Menjual Kabel & Alat Jaringan dengan Harga Terjangkau</p>
+   <header>
+    <div style="display:flex; align-items:center; gap:15px;">
+      <img src="2.png" alt="Logo Toko RIMBERIO" style="height:500px; border-radius:9px;">
+      <div>
+        <h2 style="margin:0;">TOKO RIMBERIO.SLAY</h2>
+        <p style="margin:0;">Menjual Kabel & Alat Jaringan dengan Harga Terjangkau</p>
+      </div>
+    </div>
   </header>
   <nav>
     <a href="#home">Home</a>
@@ -131,11 +145,10 @@
     <a href="#tentang">Tentang</a>
     <a href="#kontak">Kontak</a>
   </nav>
-
-  <div class="container" id="home">
+<div class="container" id="home">
     <h2>Selamat Datang di Toko RIMBERIO</h2>
     <p>Kami menyediakan berbagai kebutuhan jaringan seperti kabel UTP,
-      konektor RJ-45, MIKRO USB, CASE HANDPHONE,kuliner dan lain-lain dengan harga bersaing.</p>
+      konektor RJ-45, MIKRO USB, CASE HANDPHONE, kuliner dan lain-lain dengan harga bersaing.</p>
   </div>
 
   <div class="container" id="produk">
@@ -168,147 +181,216 @@
         <p class="price">Rp 10.000</p>
         <button class="btn" onclick="addToCart('CASE HANDPHONE', 'Rp 10.000')">Tambah ke Keranjang</button>
       </div>
-  <div class="product">
+
+      <div class="product">
         <img src="gambar5.jfif" alt="CARGER HANDPHONE">
         <h3>CARGER HANDPHONE</h3>
         <p class="price">Rp 20.000</p>
         <button class="btn" onclick="addToCart('CARGER HANDPHONE', 'Rp 20.000')">Tambah ke Keranjang</button>
       </div>
+
 	  <div class="product">
         <img src="gambar6.jfif" alt="LAN ADAPTER USB">
         <h3>LAN ADAPTER USB</h3>
         <p class="price">Rp 30.000</p>
         <button class="btn" onclick="addToCart('LAN ADAPTER USB', 'Rp 30.000')">Tambah ke Keranjang</button>
       </div>
+
 	  <div class="product">
         <img src="GAMBAR7.jfif" alt="HEADSET BLUETOOTH">
         <h3>HEADSET BLUETOOTH</h3>
         <p class="price">Rp 27.000</p>
         <button class="btn" onclick="addToCart('HEADSET BLUETOOTH', 'Rp 27.000')">Tambah ke Keranjang</button>
       </div>
-    <div class="product">
-        <img src="gambar7.jpg" alt="Case HP">
+
+      <div class="product">
+        <img src="gambar7.jpg" alt="HEADSET Kabel">
         <h3>HEADSET Kabel</h3>
         <p class="price">Rp 15.000</p>
-        <button class="btn" onclick="addToCart('HEADSET BLUETOOTH', 'Rp 15.000')">Tambah ke Keranjang</button>
+        <button class="btn" onclick="addToCart('HEADSET Kabel', 'Rp 15.000')">Tambah ke Keranjang</button>
       </div>
-    <div class="product">
+
+      <div class="product">
         <img src="GAMBAR8.jfif" alt="TEMPERED GLASS">
         <h3>TEMPERED GLASS</h3>
         <p class="price">Rp 5.000</p>
         <button class="btn" onclick="addToCart('TEMPERED GLASS', 'Rp 5.000')">Tambah ke Keranjang</button>
       </div>
-    <div class="product">
+
+      <div class="product">
         <img src="GAMBAR9.jfif" alt="Dimsum">
-        <h3>DIMSUM DENONG</h3>
+        <h3>DIMSUM_Rohma</h3>
         <p class="price">Rp 1.000/biji</p>
         <button class="btn" onclick="addToCart('DIMSUM DENONG', 'Rp 1.000')">Tambah ke Keranjang</button>
       </div>
+
 	  <div class="product">
         <img src="download.jfif" alt="Strowbery">
         <h3>strowbery.Najwa</h3>
-        <p class="price">Rp 3.000/pack kecil</p>
-        <button class="btn" onclick="addToCart('srowbery.Najwa', 'Rp 3.000')">Tambah ke Keranjang</button>
+        <p class="price">Rp 4.000/pack kecil</p>
+        <button class="btn" onclick="addToCart('strowbery.Najwa', 'Rp 4.000')">Tambah ke Keranjang</button>
       </div>
+
 	  <div class="product">
         <img src="10.jfif" alt="Cheese roll">
         <h3>cheese roll.Diana</h3>
         <p class="price">Rp 1.000/BIJI</p>
         <button class="btn" onclick="addToCart('cheese roll.Diana', 'Rp 1.000')">Tambah ke Keranjang</button>
       </div>
+
 	  <div class="product">
         <img src="1.jfif" alt="Pangsit lumer">
         <h3>Pangsit lumer.Rindu</h3>
         <p class="price">Rp 2.000/pcs</p>
         <button class="btn" onclick="addToCart('Pangsit lumer.Rindu', 'Rp 2.000')">Tambah ke Keranjang</button>
       </div>
+    </div>
   </div>
-	
-  </div>
-    
 
   <div class="container cart" id="cart">
     <h3>Keranjang Belanja</h3>
     <ul id="cart-items"></ul>
+    <p class="total">Total: Rp 0</p>
     <div id="checkout-buttons" style="display:none; margin-top:10px;">
       <a href="#" id="checkout1" class="checkout">Checkout ke WA 1</a>
       <a href="#" id="checkout2" class="checkout">Checkout ke WA 2</a>
       <a href="#" id="checkout3" class="checkout">Checkout ke WA 3</a>
       <a href="#" id="checkout4" class="checkout">Checkout ke WA 4</a>
     </div>
+    <button class="btn" style="background:#e91e63; margin-top:10px; display:none;" id="clearCartBtn" onclick="clearCart()">Kosongkan Keranjang</button>
   </div>
 
-  <div class="container" id="tentang">
+  <div id="popup" class="popup">Produk berhasil ditambahkan ✅</div> <!-- FIX emoji -->
+  
+<div class="container" id="tentang">
     <h2>Tentang Kami</h2>
-    <p>Toko RIMBERIO.SLAY adalah usaha kecil yang bergerak di bidang penjualan kabel,alat-alat GADGET dan alat-alat jaringan.
+    <p>Toko RIMBERIO.SLAY adalah usaha kecil yang bergerak di bidang penjualan kabel, alat-alat GADGET dan alat-alat jaringan.
       Produk diambil langsung dari supplier online terpercaya dengan harga grosir, lalu dijual kembali
-      dengan harga terjangkau.kecuali (DIMSUM, Cheese roll, srowbery, dan Pangsit lumer) adalah produk kami sendiri.</p>
+      dengan harga terjangkau. Kecuali (DIMSUM, Cheese roll, strowbery, dan Pangsit lumer) adalah produk kami sendiri.</p>
   </div>
-
-  <div class="container" id="kontak">
+   <div class="container" id="kontak">
     <h2>Kontak Kami</h2>
     <p>Hubungi kami melalui WhatsApp menggunakan tombol checkout di atas.</p>
   </div>
-
  
   <script>
     let cart = [];
 
+    // Load keranjang dari LocalStorage saat halaman dibuka
+    window.onload = function() {
+      let savedCart = localStorage.getItem("cart");
+      if (savedCart) {
+        cart = JSON.parse(savedCart);
+        renderCart();
+      }
+    };
+
+    function saveCart() {
+      localStorage.setItem("cart", JSON.stringify(cart));
+    }
+
+    function showPopup(msg) {
+      let popup = document.getElementById("popup");
+      popup.textContent = msg;
+      popup.classList.add("show");
+      setTimeout(() => {
+        popup.classList.remove("show");
+      }, 3000);
+    }
+
     function addToCart(name, price) {
-      cart.push({ name, price });
+      let item = cart.find(p => p.name === name);
+      if (item) {
+        item.qty++;
+      } else {
+        cart.push({ name, price, qty: 1 });
+      }
+      saveCart();
       renderCart();
+      showPopup(name + " berhasil ditambahkan ke keranjang ✅");
     }
 
     function removeFromCart(index) {
       cart.splice(index, 1);
+      saveCart();
       renderCart();
+    }
+
+    function updateQty(index, value) {
+      if (value < 1) value = 1;
+      cart[index].qty = parseInt(value);
+      saveCart();
+      renderCart();
+    }
+
+    function clearCart() {
+      cart = [];
+      saveCart();
+      renderCart();
+      showPopup("Keranjang sudah dikosongkan ❌");
     }
 
     function renderCart() {
       let cartList = document.getElementById("cart-items");
       cartList.innerHTML = "";
 
+      let total = 0;
+
       cart.forEach((item, index) => {
         let li = document.createElement("li");
-        li.textContent = `${item.name} - ${item.price}`;
+        let harga = parseInt(item.price.replace(/[^0-9]/g, ""));
+        let subtotal = harga * item.qty;
+        total += subtotal;
+
+        li.innerHTML = `
+          ${item.name} - ${item.price} x 
+          <input type="number" value="${item.qty}" min="1" style="width:50px;text-align:center" onchange="updateQty(${index}, this.value)">
+          = Rp ${subtotal.toLocaleString()}
+        `;
+
         let removeBtn = document.createElement("span");
         removeBtn.textContent = " ❌";
         removeBtn.className = "removeBtn";
         removeBtn.onclick = () => removeFromCart(index);
         li.appendChild(removeBtn);
+
         cartList.appendChild(li);
       });
 
+      document.querySelector(".total").textContent = "Total: Rp " + total.toLocaleString();
+
       let checkoutBtns = document.getElementById("checkout-buttons");
+      let clearCartBtn = document.getElementById("clearCartBtn");
 
       if (cart.length > 0) {
         checkoutBtns.style.display = "block";
+        clearCartBtn.style.display = "inline-block";
 
-        let message = "Hallo Teteh, saya ingin memesan:";
+        let message = "Hallo Teteh, saya ingin memesan:%0A";
         cart.forEach(item => {
-          message += `- ${item.name} (${item.price})`;
+          message += `- ${item.name} (${item.price}) x ${item.qty}%0A`;
         });
+        message += `%0ATotal: Rp ${total.toLocaleString()}`;
 
-        // nomor WhatsApp
         let Rohma = "6283152859084";
         let Diana = "6281280279925";
         let Rindu = "6289531547651";
         let Najwa = "6281779419293";
 
-        document.getElementById("checkout1").href = "https://wa.me/" + Rohma + "?text=" + encodeURIComponent(message);
-        document.getElementById("checkout2").href = "https://wa.me/" + Diana + "?text=" + encodeURIComponent(message);
-        document.getElementById("checkout3").href = "https://wa.me/" + Rindu + "?text=" + encodeURIComponent(message);
-        document.getElementById("checkout4").href = "https://wa.me/" + Najwa + "?text=" + encodeURIComponent(message);
+        document.getElementById("checkout1").href = "https://wa.me/" + Rohma + "?text=" + message;
+        document.getElementById("checkout2").href = "https://wa.me/" + Diana + "?text=" + message;
+        document.getElementById("checkout3").href = "https://wa.me/" + Rindu + "?text=" + message;
+        document.getElementById("checkout4").href = "https://wa.me/" + Najwa + "?text=" + message;
       } else {
         checkoutBtns.style.display = "none";
+        clearCartBtn.style.display = "none";
       }
     }
   </script>
   <footer>
   <p>&copy; 2025 Toko RIMBERIO.NET - Semua Hak Dilindungi</p>
-  <p>Alamat: Jl. Nyimas Rara Kerta,Kec.Jamblang,Kab.Cirebon,SMKN 1 JAMBLANG,Kelas.XI TJKT</p>
+  <p>Alamat: Jl. Nyimas Rara Kerta, Kec. Jamblang, Kab. Cirebon, SMKN 1 JAMBLANG, Kelas XI TJKT</p>
   <p>WhatsApp: <a href="https://wa.me/6283152859084" style="color:white; text-decoration:underline;">+62 831-5285-9084</a></p>
 </footer>
-
 </body>
 </html>
