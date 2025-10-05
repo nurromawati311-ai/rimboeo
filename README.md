@@ -3,8 +3,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>TOKO RIMBERIO.SLAY</title>
-  <style>
-   body {
+<style>
+body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
@@ -12,129 +12,193 @@
   color: #333;
 }
 
-	header {
-      background: pink;
-      color: white;
-      padding: 0px;
-      text-align: center;
-	   margin-top: 30px;
-	border-radius: 10px;
-	  }
-	  nav {
-      background: #FC6CB5;
-	  display: flex;
-	  justify-content: center;
-	  padding: 20px;
-	  }
-    nav a {
-	color: #F2D2BD;
-	text-decoration: none;
-	margin: 15px;
-	font-weight: bold;
-	}
-    .container {
-	max-width: 1000px;
-	margin: 20px auto;
-	padding: 0 15px;
-	}
-    .products {
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-	gap: 20px;
-	padding: 10px;
-	}
-    .product {
-	border: 1px solid #ccc;
-	background: #F2D2BD;
-	padding: 15px;
-	border-radius: 10px;
-	box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-	text-align: center;
-	}
-    .product img {
-	width: 100%;
-	height: auto;
-	object-fit: contain;
-	border-radius: 5px;}
-    .product h3 {
-	margin: 10px 0 5px;
-	}
-    .price {
-	color: #FC6CB5;
-	font-weight: bold;
-	}
-    .btn {
-	display: inline-block;
-	margin-top: 10px;
-	padding: 10px 15px;
-	background: #F98088;
-	color: white;
-	border-radius: 5px;
-	text-decoration: none;
-	cursor: pointer;
-	}
-    .btn:hover {background: violet;}  
-    .cart {
-	background: #F98088;
-	padding: 15px;
-	margin-top: 30px;
-	border-radius: 10px;
-	box-shadow: 0 2px 5px rgba(0,0,0,0.1);}
-    .cart h3 {margin-top: 0;}
-    .cart ul {padding-left: 20px;}
-    .cart li {margin-bottom: 8px;}
-    .removeBtn {
-	margin-left: 10px;
-	color: red;
-	cursor: pointer;
-	font-weight: bold;
-	}
-    .checkout {
-	display: inline-block;
-	margin: 5px 10px 5px 0;
-	padding: 10px 15px;
-	background: #F8ABA0;
-	color: white;
-	border-radius: 5px;
-	text-decoration: none;
-	font-weight: bold;
-	transition: background 0.2s;
-	}
-    .checkout:hover {background: purple;}  /* FIX warna */
-    footer {
-	background: pink;
-	color: white;
-	text-align: center;
-	padding: 25px;
-	margin-top: 20px;
-	}
-    .total {
-	font-weight: bold;
-	margin-top: 10px;
-	font-size: 18px;
-	color: #a83279;
-	}
-    /* Popup notifikasi */
-    .popup {
-	position: fixed;
-	top: 20px;
-	right: 20px;
-	background: #C5ADED;
-	color: black;
-	padding: 12px 20px;
-	border-radius: 8px;
-	box-shadow: 0 3px 8px rgba(0,0,0,0.2);
-	opacity: 0;
-	transform: translateY(-20px);
-	transition: all 0.3s ease;
-	z-index: 9999;}
-    .popup.show {opacity: 1;transform: translateY(0);}
-  </style>
+/* HEADER */
+header {
+  background: pink;
+  color: white;
+  padding: 15px;
+  text-align: center;
+}
+header img {
+  height: 100px;
+  border-radius: 8px;
+}
+header div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+header h2 {
+  margin: 0;
+  font-size: 1.5em;
+}
+
+/* NAVIGASI */
+nav {
+  background: #FC6CB5;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+nav a {
+  color: #F2D2BD;
+  text-decoration: none;
+  margin: 8px 12px;
+  font-weight: bold;
+  font-size: 0.95em;
+}
+
+/* KONTEN */
+.container {
+  max-width: 1000px;
+  margin: 20px auto;
+  padding: 0 15px;
+}
+
+/* PRODUK GRID */
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 15px;
+  padding: 10px;
+}
+
+/* KARTU PRODUK */
+.product {
+  border: 1px solid #ccc;
+  background: #F2D2BD;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  text-align: center;
+}
+.product img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+.product h3 {
+  margin: 8px 0 5px;
+  font-size: 1em;
+}
+.price {
+  color: #FC6CB5;
+  font-weight: bold;
+  font-size: 0.9em;
+}
+.btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 12px;
+  background: #F98088;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 0.9em;
+}
+.btn:hover { background: violet; }
+
+/* KERANJANG BELANJA */
+.cart {
+  background: #F98088;
+  padding: 15px;
+  margin-top: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.cart h3 {
+  margin-top: 0;
+  font-size: 1.2em;
+}
+.cart li {
+  margin-bottom: 8px;
+  font-size: 0.9em;
+}
+.removeBtn {
+  margin-left: 10px;
+  color: red;
+  cursor: pointer;
+  font-weight: bold;
+}
+.checkout {
+  display: inline-block;
+  margin: 5px 10px 5px 0;
+  padding: 10px 15px;
+  background: #F8ABA0;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.2s;
+  font-size: 0.9em;
+}
+.checkout:hover { background: purple; }
+
+/* POPUP */
+.popup {
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  background: #C5ADED;
+  color: black;
+  padding: 10px 16px;
+  border-radius: 8px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: all 0.3s ease;
+  z-index: 9999;
+  font-size: 0.9em;
+}
+.popup.show { opacity: 1; transform: translateY(0); }
+
+/* FOOTER */
+footer {
+  background: pink;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 30px;
+  font-size: 0.9em;
+}
+
+
+(max-width: 600px) {
+  header img {
+    height: 80px;
+  }
+  header h2 {
+    font-size: 1.2em;
+  }
+  .products {
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  }
+  .product img {
+    height: 120px;
+  }
+  .btn, .checkout {
+    font-size: 0.8em;
+    padding: 8px 10px;
+  }
+  nav a {
+    font-size: 0.85em;
+    margin: 5px;
+  }
+  footer {
+    font-size: 0.8em;
+  }
+}
+</style>
 </head>
 <body>
    <header>
     <div style="display:flex; align-items:center; gap:15px;">
-      <img src="2.png" alt="Logo Toko RIMBERIO" style="height:200px; border-radius:9px;">
+      <img src="2.jpg" alt="Logo Toko RIMBERIO" style="height:200px; border-radius:9px;">
       <div>
         <h2 style="margin:0;">TOKO RIMBERIO.SLAY</h2>
         <p style="margin:0;">Menjual Kabel & Alat Jaringan dengan Harga Terjangkau</p>
