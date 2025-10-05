@@ -20,6 +20,11 @@ header {
   margin-top: 30px;
   border-radius: 10px;
   text-align: center;
+   width: 100%
+  max-width: 1000px
+  box-sizing: border-box;
+}
+header img {
 }
 header img {
   height: 100px;
@@ -170,9 +175,10 @@ footer {
 }
 
 
-(max-width: 600px) {
+(max-width: 1000px) {
   header img {
     height: 80px;
+	width: 100%
   }
   header h2 {
     font-size: 1.2em;
