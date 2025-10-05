@@ -17,6 +17,8 @@
       color: white;
       padding: 0px;
       text-align: center;
+	   margin-top: 30px;
+	border-radius: 10px;
 	  }
 	  nav {
       background: #FC6CB5;
@@ -131,7 +133,7 @@
 </head>
 <body>
    <header>
-    <div style="display:flex; align-items:center; gap:150px;">
+    <div style="display:flex; align-items:center; gap:15px;">
       <img src="2.png" alt="Logo Toko RIMBERIO" style="height:200px; border-radius:9px;">
       <div>
         <h2 style="margin:0;">TOKO RIMBERIO.SLAY</h2>
