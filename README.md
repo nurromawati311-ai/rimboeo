@@ -15,19 +15,19 @@
 	header {
       background: pink;
       color: white;
-      padding: 20px;
+      padding: 0px;
       text-align: center;
 	  }
 	  nav {
       background: #FC6CB5;
 	  display: flex;
 	  justify-content: center;
-	  padding: 10px;
+	  padding: 20px;
 	  }
     nav a {
 	color: #F2D2BD;
 	text-decoration: none;
-	margin: 0 15px;
+	margin: 15px;
 	font-weight: bold;
 	}
     .container {
@@ -131,8 +131,8 @@
 </head>
 <body>
    <header>
-    <div style="display:flex; align-items:center; gap:15px;">
-      <img src="2.png" alt="Logo Toko RIMBERIO" style="height:500px; border-radius:9px;">
+    <div style="display:flex; align-items:center; gap:150px;">
+      <img src="2.png" alt="Logo Toko RIMBERIO" style="height:200px; border-radius:9px;">
       <div>
         <h2 style="margin:0;">TOKO RIMBERIO.SLAY</h2>
         <p style="margin:0;">Menjual Kabel & Alat Jaringan dengan Harga Terjangkau</p>
