@@ -16,15 +16,13 @@ body {
 header {
   background: pink;
   color: white;
-  padding: 15px;
-  margin-top: 30px;
+  padding: 20px;
+  margin: 0 auto;
   border-radius: 10px;
   text-align: center;
-   width: 100%
-  max-width: 1000px
+  width: 100%;
+  max-width: 1000px;
   box-sizing: border-box;
-}
-header img {
 }
 header img {
   height: 100px;
@@ -174,11 +172,10 @@ footer {
   font-size: 0.9em;
 }
 
-
-(max-width: 1000px) {
+/* RESPONSIVE */
+@media screen and (max-width: 1000px) {
   header img {
     height: 80px;
-	width: 100%
   }
   header h2 {
     font-size: 1.2em;
@@ -213,13 +210,15 @@ footer {
       </div>
     </div>
   </header>
+
   <nav>
     <a href="#home">Home</a>
     <a href="#produk">Produk</a>
     <a href="#tentang">Tentang</a>
     <a href="#kontak">Kontak</a>
   </nav>
-<div class="container" id="home">
+
+  <div class="container" id="home">
     <h2>Selamat Datang di Toko RIMBERIO</h2>
     <p>Kami menyediakan berbagai kebutuhan jaringan seperti kabel UTP,
       konektor RJ-45, MIKRO USB, CASE HANDPHONE, kuliner dan lain-lain dengan harga bersaing.</p>
@@ -263,57 +262,50 @@ footer {
         <button class="btn" onclick="addToCart('CARGER HANDPHONE', 'Rp 20.000')">Tambah ke Keranjang</button>
       </div>
 
-	  <div class="product">
+      <div class="product">
         <img src="gambar6.jfif" alt="LAN ADAPTER USB">
         <h3>LAN ADAPTER USB</h3>
         <p class="price">Rp 30.000</p>
         <button class="btn" onclick="addToCart('LAN ADAPTER USB', 'Rp 30.000')">Tambah ke Keranjang</button>
       </div>
 
-	  <div class="product">
-        <img src="GAMBAR7.jfif" alt="HEADSET BLUETOOTH">
+      <div class="product">
+        <img src="gambar7.jfif" alt="HEADSET BLUETOOTH">
         <h3>HEADSET BLUETOOTH</h3>
         <p class="price">Rp 27.000</p>
         <button class="btn" onclick="addToCart('HEADSET BLUETOOTH', 'Rp 27.000')">Tambah ke Keranjang</button>
       </div>
 
       <div class="product">
-        <img src="gambar7.jpg" alt="HEADSET Kabel">
-        <h3>HEADSET Kabel</h3>
-        <p class="price">Rp 15.000</p>
-        <button class="btn" onclick="addToCart('HEADSET Kabel', 'Rp 15.000')">Tambah ke Keranjang</button>
-      </div>
-
-      <div class="product">
-        <img src="GAMBAR8.jfif" alt="TEMPERED GLASS">
+        <img src="gambar8.jfif" alt="TEMPERED GLASS">
         <h3>TEMPERED GLASS</h3>
         <p class="price">Rp 5.000</p>
         <button class="btn" onclick="addToCart('TEMPERED GLASS', 'Rp 5.000')">Tambah ke Keranjang</button>
       </div>
 
       <div class="product">
-        <img src="GAMBAR9.jfif" alt="Dimsum">
+        <img src="gambar9.jfif" alt="Dimsum">
         <h3>DIMSUM_Rohma</h3>
         <p class="price">Rp 1.000/biji</p>
-        <button class="btn" onclick="addToCart('DIMSUM DENONG', 'Rp 1.000')">Tambah ke Keranjang</button>
+        <button class="btn" onclick="addToCart('DIMSUM_Rohma', 'Rp 1.000')">Tambah ke Keranjang</button>
       </div>
 
-	  <div class="product">
-        <img src="download.jfif" alt="Strowbery">
-        <h3>strowbery.Najwa</h3>
+      <div class="product">
+        <img src="strawberry.jfif" alt="Strawberry">
+        <h3>strawberry.Najwa</h3>
         <p class="price">Rp 4.000/pack kecil</p>
-        <button class="btn" onclick="addToCart('strowbery.Najwa', 'Rp 4.000')">Tambah ke Keranjang</button>
+        <button class="btn" onclick="addToCart('strawberry.Najwa', 'Rp 4.000')">Tambah ke Keranjang</button>
       </div>
 
-	  <div class="product">
-        <img src="10.jfif" alt="Cheese roll">
+      <div class="product">
+        <img src="cheeseroll.jfif" alt="Cheese roll">
         <h3>cheese roll.Diana</h3>
         <p class="price">Rp 1.000/BIJI</p>
         <button class="btn" onclick="addToCart('cheese roll.Diana', 'Rp 1.000')">Tambah ke Keranjang</button>
       </div>
 
-	  <div class="product">
-        <img src="1.jfif" alt="Pangsit lumer">
+      <div class="product">
+        <img src="pangsit.jfif" alt="Pangsit lumer">
         <h3>Pangsit lumer.Rindu</h3>
         <p class="price">Rp 2.000/pcs</p>
         <button class="btn" onclick="addToCart('Pangsit lumer.Rindu', 'Rp 2.000')">Tambah ke Keranjang</button>
@@ -326,31 +318,31 @@ footer {
     <ul id="cart-items"></ul>
     <p class="total">Total: Rp 0</p>
     <div id="checkout-buttons" style="display:none; margin-top:10px;">
-      <a href="#" id="checkout1" class="checkout">Checkout ke WA 1</a>
-      <a href="#" id="checkout2" class="checkout">Checkout ke WA 2</a>
-      <a href="#" id="checkout3" class="checkout">Checkout ke WA 3</a>
-      <a href="#" id="checkout4" class="checkout">Checkout ke WA 4</a>
+      <a href="#" id="checkout1" class="checkout">Checkout ke WA Rohma</a>
+      <a href="#" id="checkout2" class="checkout">Checkout ke WA Diana</a>
+      <a href="#" id="checkout3" class="checkout">Checkout ke WA Rindu</a>
+      <a href="#" id="checkout4" class="checkout">Checkout ke WA Najwa</a>
     </div>
     <button class="btn" style="background:#e91e63; margin-top:10px; display:none;" id="clearCartBtn" onclick="clearCart()">Kosongkan Keranjang</button>
   </div>
 
-  <div id="popup" class="popup">Produk berhasil ditambahkan ✅</div> <!-- FIX emoji -->
+  <div id="popup" class="popup">Produk berhasil ditambahkan ✅</div>
   
-<div class="container" id="tentang">
+  <div class="container" id="tentang">
     <h2>Tentang Kami</h2>
     <p>Toko RIMBERIO.SLAY adalah usaha kecil yang bergerak di bidang penjualan kabel, alat-alat GADGET dan alat-alat jaringan.
       Produk diambil langsung dari supplier online terpercaya dengan harga grosir, lalu dijual kembali
-      dengan harga terjangkau. Kecuali (DIMSUM, Cheese roll, strowbery, dan Pangsit lumer) adalah produk kami sendiri.</p>
+      dengan harga terjangkau. Kecuali (DIMSUM, Cheese roll, strawberry, dan Pangsit lumer) adalah produk kami sendiri.</p>
   </div>
-   <div class="container" id="kontak">
+
+  <div class="container" id="kontak">
     <h2>Kontak Kami</h2>
     <p>Hubungi kami melalui WhatsApp menggunakan tombol checkout di atas.</p>
   </div>
- 
+
   <script>
     let cart = [];
 
-    // Load keranjang dari LocalStorage saat halaman dibuka
     window.onload = function() {
       let savedCart = localStorage.getItem("cart");
       if (savedCart) {
@@ -461,10 +453,11 @@ footer {
       }
     }
   </script>
+
   <footer>
-  <p>&copy; 2025 Toko RIMBERIO.NET - Semua Hak Dilindungi</p>
-  <p>Alamat: Jl. Nyimas Rara Kerta, Kec. Jamblang, Kab. Cirebon, SMKN 1 JAMBLANG, Kelas XI TJKT</p>
-  <p>WhatsApp: <a href="https://wa.me/6283152859084" style="color:white; text-decoration:underline;">+62 831-5285-9084</a></p>
-</footer>
+    <p>&copy; 2025 Toko RIMBERIO.SLAY - Semua Hak Dilindungi</p>
+    <p>Alamat: Jl. Nyimas Rara Kerta, Kec. Jamblang, Kab. Cirebon, SMKN 1 JAMBLANG, Kelas XI TJKT</p>
+    <p>WhatsApp: <a href="https://wa.me/6283152859084" style="color:white; text-decoration:underline;">+62 831-5285-9084</a></p>
+  </footer>
 </body>
 </html>
